@@ -6,3 +6,55 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-image: url(/pagina-produto/static/fundo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.content {
+    background-color: #ffffff;
+    height: 400px;
+    width: 550px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 8px #00000077;
+}
+
+.content > h1 {
+    text-align: left;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.content > p {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.column1 {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.img1-column1  > img{
+    margin-right: 7px;
+}
+
+
+.column2 {
+    display: flex;
+    margin-left: 20px;
+}
+
+.img1-column2 {
+    margin-right: 7px;
+}
