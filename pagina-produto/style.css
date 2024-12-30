@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(48, 46, 46);
+    padding: 1em;
+}
+
+header > h1 {
+    color: #f9c73f7e;
+    font-size: 1.5em;
+}
+
+.links > a {
+    padding: 1em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.links > a:hover {
+    transition: .8s;
+    color: #f9c73f7e;
+}
+
+header > .btn-reserve {
+    padding: 1em;
+    background-color: #f9c73f7e;
+    border: none;
+    cursor: pointer;
+}
+
+header > .btn-reserve:hover {
+    transition: .8s;
+    background-color: #fff;
+}
+
+main > .section-img-fundo {
+    background-image: url(/pagina-produto/imagens/foto-fundo.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 93vh;
+}
+
+.info-img-fundo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.info-img-fundo > h1 {
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.5em;
+}
+
+.info-img-fundo > p {
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.btn-view-menu {
+    padding: 1em;
+    border: 2px solid #fff;
+    background-color: transparent;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-view-menu:hover {
+    transition: .8s;
+    color: #0000008f;
+    background-color: #fff;
+}
+
+.section-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5em;
+}
+
+.info-section-two {
+    padding: 4em;
+}
+
+.info-section-two > h1 {
+    margin-bottom: 15px;
+    font-size: 2.5em;
+}
+
+.info-section-two > p {
+    margin-bottom: 10px;
+}
+
+.read-more {
+    padding: 1em;
+    color: #000;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.read-more:hover {
+    transition: .8s;
+    color: #fff;
+    background-color: #000;
+}
