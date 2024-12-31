@@ -43,7 +43,7 @@ header > .btn-reserve:hover {
 }
 
 main > .section-img-fundo {
-    background-image: url(/pagina-produto/imagens/foto-fundo.jpg);
+    background-image: url(/restaurant/imagens/foto-fundo.jpg);
     background-position: center;
     background-size: cover;
     height: 93vh;
@@ -92,11 +92,12 @@ main > .section-img-fundo {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 5em;
+    padding: 3em;
 }
 
 .info-section-two {
-    padding: 4em;
+    padding: 2em;
+    margin-bottom: 20px;
 }
 
 .info-section-two > h1 {
@@ -119,4 +120,27 @@ main > .section-img-fundo {
     transition: .8s;
     color: #fff;
     background-color: #000;
+}
+
+@media (max-width: 786px) {
+    
+    .links {
+        margin-left: 20px;
+        padding: 1em;
+    }
+    
+    
+    .section-two {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info-section-two {
+        padding: 1em;
+    }
+
+    .info-section-two > p {
+        font-size: 1em;
+    }
 }
