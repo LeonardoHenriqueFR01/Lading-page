@@ -92,7 +92,7 @@ header > nav > a:hover {
 
 
 .home-content > .links > a > img {
-    width: 25px;
+    width: 30px;
     margin-right: 20px;
     padding: .2em;
     border-radius: 10px;
@@ -241,8 +241,20 @@ header > nav > a:hover {
         padding: 1.3em;
     }
 
+    .links {
+        padding: 1.5em;
+    }
+
+    .home > img {
+        margin-bottom: 13px;
+    }
+
     .home-content {
         height: 300px;
+    }
+
+    .contact-content {
+        padding: 2em;
     }
 
 }
