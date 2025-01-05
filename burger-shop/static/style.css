@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary-color: #ff9306;
+    --secundary-color: #ffff00;
+}
+
+body {
+    background: linear-gradient(to right, #fff, var(--primary-color));
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+}
+
+header > div > img {
+    width: 50px;
+    margin-right: 7px;
+}
+
+header > div > h1 > .burger {
+    color: green;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+header > div > h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+header > nav > .home {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+header > nav > .home:hover {
+    transition: .8s;
+    color: var(--secundary-color);
+}
+
+header > nav > a {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #000000;
+}
+
+header > button {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+header > button:hover {
+    transition: 0.8s;
+    background-color: var(--secundary-color);
+}
+
+main > .section-one {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main > .section-one > .section-info {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 5em;
+} 
+
+main > .section-one > .section-info > h1 {
+    font-size: 4em;
+    font-weight: bolder;
+}
+
+main > .section-one > .section-info > h1 > .flavor {
+    color: var(--primary-color);
+}
+
+main > .section-one > .section-info > p {
+    font-size: 1.7em;
+    max-width: 500px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+main > .section-one > .section-info > div > .order-now {
+    padding: 1em;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+main > .section-one > .section-info > div > .order-now:hover {
+    transition: .8s;
+    background-color: var(--secundary-color);
+    color: #000000;
+}
+
+main > .section-one > .section-info > div > .process-order {
+    padding: 1em;
+    font-size: 1.3em;
+    background-color: #ffffff;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+main > .section-one > .section-info > div > .process-order:hover {
+    transition: .8s;
+    background-color: var(--secundary-color);
+}
