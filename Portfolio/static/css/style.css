@@ -173,19 +173,19 @@ header > nav > a:hover {
 }
 
 .section-contact {
+    height: 100vh;
     background-color: var(--third-color);
 }
 
 .section-contact > h1 {
     text-align: center;
-    color: #ffffff;
     font-size: 2.5em;
-    display: flex;
-    justify-content: center;
+    color: #ffffff;
+    margin-top: 50px;
 }
 
 .contact-content > form {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -236,6 +236,11 @@ header > nav > a:hover {
     header > h1 {   
         margin-bottom: 7px;
     }
+
+    .header > nav > a {
+        flex: auto;
+    }
+
     header {
         flex-direction: column;
         padding: 1.3em;
@@ -246,7 +251,7 @@ header > nav > a:hover {
     }
 
     .home > img {
-        margin-bottom: 13px;
+        margin: 30px;
     }
 
     .home-content {
