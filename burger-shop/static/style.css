@@ -194,3 +194,55 @@ main > .section-home > .section-home-info > div > .process-order:hover {
     transition: .8s;
     background-color: #c57204;
 }
+
+@media (max-width: 786px) {
+    
+    header {
+        flex-direction: column;
+        position: relative;
+        width: 100vw;
+    }
+
+    header > nav {
+        padding: 1em;
+    }
+
+    header > button {
+        display: none;
+    }
+
+    .section-home {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .section-home-info {
+        margin-top: 50px;
+    }
+
+    .section-home > img {
+        width: 400px;
+    }
+
+    .section-about {
+        padding: 1em;
+        flex-wrap: wrap-reverse;
+    }
+
+    .section-about > img {
+        width: 350px;
+    }
+
+    .section-about-info {
+        max-width: 500px;
+    }
+
+    .section-about-info > p {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+}

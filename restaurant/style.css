@@ -1,38 +1,47 @@
-
 * {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --pricipal-color: #e4ae1cd2;
+}
+
 header {
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: rgb(48, 46, 46);
     padding: 1em;
+    position: fixed;
 }
 
 header > h1 {
-    color: #f9c73f7e;
-    font-size: 1.5em;
+    color: var(--pricipal-color);
+    font-size: 3em;
 }
 
 .links > a {
     padding: 1em;
     text-decoration: none;
     color: #fff;
+    font-size: 1.5em;
 }
 
 .links > a:hover {
     transition: .8s;
-    color: #f9c73f7e;
+    color: var(--pricipal-color);
 }
 
 header > .btn-reserve {
     padding: 1em;
-    background-color: #f9c73f7e;
+    font-size: 1.3em;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: var(--pricipal-color);
     border: none;
     cursor: pointer;
 }
@@ -43,10 +52,10 @@ header > .btn-reserve:hover {
 }
 
 main > .section-img-fundo {
-    background-image: url(/restaurant/imagens/foto-fundo.jpg);
+    background-image: url(/restaurant/imagens/foto-fundo-restaurant.jpg);
     background-position: center;
     background-size: cover;
-    height: 93vh;
+    height: 100vh;
 }
 
 .info-img-fundo {
@@ -61,8 +70,8 @@ main > .section-img-fundo {
     color: #fff;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 4em;
-    margin-bottom: 7px;
+    font-size: 6em;
+    margin-bottom: 10px;
 }
 
 .info-img-fundo > p {
@@ -70,11 +79,13 @@ main > .section-img-fundo {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     margin-bottom: 15px;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .btn-view-menu {
     padding: 1em;
+    font-size: 1.5em;
+    border-radius: 10px;
     border: 2px solid #fff;
     background-color: transparent;
     font-weight: bold;
@@ -93,6 +104,12 @@ main > .section-img-fundo {
     align-items: center;
     justify-content: space-around;
     padding: 3em;
+    height: 50vh;
+}
+
+.section-two > img {
+    border-radius: 15px;
+    width: 500px;
 }
 
 .info-section-two {
@@ -102,15 +119,19 @@ main > .section-img-fundo {
 
 .info-section-two > h1 {
     margin-bottom: 15px;
-    font-size: 2.5em;
+    font-size: 4em;
 }
 
 .info-section-two > p {
-    margin-bottom: 10px;
+    font-size: 1.5em;
+    margin-bottom: 15px;
 }
 
 .read-more {
     padding: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px;
     color: #000;
     background-color: transparent;
     cursor: pointer;
@@ -125,22 +146,35 @@ main > .section-img-fundo {
 @media (max-width: 786px) {
     
     .links {
-        margin-left: 20px;
         padding: 1em;
     }
     
-    
+    .links > a {
+        flex: auto;
+    }
+
+    header {
+        position: relative;
+    }
+
+    header > .btn-reserve {
+        display: none;
+    }
+
     .section-two {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin-top: 20px;
     }
 
-    .info-section-two {
-        padding: 1em;
+    .section-two > img {
+       width: 440px; 
+        
     }
 
     .info-section-two > p {
-        font-size: 1em;
+        font-size: 1.5em;
+        text-align: justify;
     }
 }
