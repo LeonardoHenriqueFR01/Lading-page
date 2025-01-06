@@ -8,6 +8,7 @@
 :root {
     --primary-color: #ff9306;
     --secundary-color: #ffff00;
+    --hover-color: #c57204;
 }
 
 body {
@@ -61,6 +62,12 @@ header > nav > a {
     color: #000000;
 }
 
+header > nav a:hover {
+    transition: .8s;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
 header > button {
     font-size: 1.4em;
     font-weight: bold;
@@ -71,16 +78,17 @@ header > button {
 
 header > button:hover {
     transition: 0.8s;
-    background-color: var(--secundary-color);
+    background-color: var(--hover-color);
+    color: #ffffff;
 }
 
-main > .section-one {
+main > .section-home {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-main > .section-one > .section-info {
+main > .section-home > .section-home-info {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -89,23 +97,23 @@ main > .section-one > .section-info {
     padding: 5em;
 } 
 
-main > .section-one > .section-info > h1 {
+main > .section-home > .section-home-info > h1 {
     font-size: 4em;
     font-weight: bolder;
 }
 
-main > .section-one > .section-info > h1 > .flavor {
+main > .section-home > .section-home-info > h1 > .flavor {
     color: var(--primary-color);
 }
 
-main > .section-one > .section-info > p {
+main > .section-home > .section-home-info > p {
     font-size: 1.7em;
     max-width: 500px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
-main > .section-one > .section-info > div > .order-now {
+main > .section-home > .section-home-info > div > .order-now {
     padding: 1em;
     font-size: 1.3em;
     font-weight: bold;
@@ -117,13 +125,12 @@ main > .section-one > .section-info > div > .order-now {
     margin-right: 15px;
 }
 
-main > .section-one > .section-info > div > .order-now:hover {
+main > .section-home > .section-home-info > div > .order-now:hover {
     transition: .8s;
-    background-color: var(--secundary-color);
-    color: #000000;
+    background-color: var(--hover-color);
 }
 
-main > .section-one > .section-info > div > .process-order {
+main > .section-home > .section-home-info > div > .process-order {
     padding: 1em;
     font-size: 1.3em;
     background-color: #ffffff;
@@ -132,7 +139,57 @@ main > .section-one > .section-info > div > .process-order {
     cursor: pointer;
 }
 
-main > .section-one > .section-info > div > .process-order:hover {
+main > .section-home > .section-home-info > div > .process-order:hover {
     transition: .8s;
-    background-color: var(--secundary-color);
+    background-color: var(--hover-color);
+    color: #ffffff;
+}
+
+.section-about {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6em;
+}
+
+.section-about > img {
+    border-radius: 10px;
+}
+
+.section-about > .section-about-info {
+    flex-direction: column;
+    padding: 4em;
+    max-width: 700px;
+    background-color: #dddddd28;
+}
+
+.section-about > .section-about-info > h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+.section-about > .section-about-info > h1 > .food {
+    color: var(--primary-color);
+}
+
+.section-about > .section-about-info > p {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.section-about > .section-about-info > button {
+    padding: 1em;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.section-about > .section-about-info > button:hover {
+    transition: .8s;
+    background-color: #c57204;
 }
