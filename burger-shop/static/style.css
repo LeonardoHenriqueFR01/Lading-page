@@ -23,7 +23,6 @@ header {
     width: 100vw;
     position: fixed;
 }
-
 header > div {
     display: flex;
     align-items: center;

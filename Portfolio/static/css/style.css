@@ -8,6 +8,7 @@
 }
 
 :root {
+    --button-color: #20A4F3; /* Cor para botões */
     --first-color: #0a152f; /* Cor do Header */
     --second-color: #15dceb; /* Cor para efeitos */
     --third-color: #063963; /* Cor para o About */
@@ -21,21 +22,24 @@ body {
 header {
     background-color: var(--first-color);
     height: 37px;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 1em;
+    position: fixed;
 }
 
 header > h1 {
     color: #ffffff;
-    font-size: 1.7em;
+    font-size: 3em;
 }
 
 header > nav > a {
     text-decoration: none;
     color: #ffffff;
     margin-right: 20px;
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
 header > nav > a:hover {
@@ -63,8 +67,8 @@ header > nav > a:hover {
 }
 
 .home > img {
-    width: 250px;
-    height: 270px;
+    width: 350px;
+    height: 350px;
     margin-right: 20px;
     border-radius: 50vh;
     padding: 0.5em;
@@ -79,20 +83,20 @@ header > nav > a:hover {
 }
 
 .home-content > h1 {
-    font-size: 2em;
+    font-size: 3em;
     color: #ffffff;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .home-content > p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #ffffff;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 
 .home-content > .links > a > img {
-    width: 30px;
+    width: 40px;
     margin-right: 20px;
     padding: .2em;
     border-radius: 10px;
@@ -114,12 +118,12 @@ header > nav > a:hover {
 }
 
 .about-content {
-    max-width: 400px;
+    max-width: 450px;
 }
 
 .about-content > p {
     color: #ffffff;
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
 .links-project {
@@ -129,12 +133,12 @@ header > nav > a:hover {
 
 .links-project > p {
     color: #ffffff;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .section-services > h1 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3em;
     color: #ffffff;
     margin-top: 50px;
 }
@@ -148,12 +152,13 @@ header > nav > a:hover {
 }
 
 .services-content > a > button {
-    padding: 0.5em;
-    font-size: 1.2em;
+    padding: 1em;
+    font-size: 1.5em;
     box-shadow: 1px 3px 15px var(--second-color);
-    color: var(--first-color);
+    color: #ffffff;
+    background-color: var(--button-color);
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
 }
@@ -168,7 +173,7 @@ header > nav > a:hover {
     margin-left: 20px;
     margin-bottom: 5px;
     color: #ffffff;
-    font-size: 1.2em;
+    font-size: 1.7em;
 
 }
 
@@ -179,9 +184,8 @@ header > nav > a:hover {
 
 .section-contact > h1 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3em;
     color: #ffffff;
-    margin-top: 50px;
 }
 
 .contact-content > form {
@@ -195,34 +199,38 @@ header > nav > a:hover {
 
 .contact-content > form > label {
     color: #ffffff;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
 }
 
 
 .contact-content > form > input {
     width: 50vh;
     margin-bottom: 20px;
-    padding: 0.5em;
-    font-size: 1em;
+    padding: 1em;
+    font-size: 1.5em;
+    border-radius: 10px;
 }
 
 .contact-content > form > textarea {
     width: 50vh;
-    height: 50px;
-    padding: 0.5em;
-    font-size: 1em;
+    height: 60px;
+    padding: 1em;
+    font-size: 1.5em;
+    border-radius: 10px;
 }
 
 .contact-content > form > button {
-    margin-top: 20px;
+    margin-top: 25px;
     width: 20vh;
-    padding: 0.5em;
-    font-size: 1em;
+    padding: 1em;
+    font-size: 1.6em;
     font-weight: bold;
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    color: var(--first-color);
+    background-color: var(--button-color);
+    color: #ffffff;
     box-shadow: 1px 3px 12px var(--second-color);
 }
 
@@ -243,7 +251,9 @@ header > nav > a:hover {
 
     header {
         flex-direction: column;
-        padding: 1.3em;
+        padding: 1.5em;
+        position: relative;
+        height: 70px;
     }
 
     .links {
@@ -251,7 +261,7 @@ header > nav > a:hover {
     }
 
     .home > img {
-        margin: 30px;
+        margin: 50px;
     }
 
     .home-content {
