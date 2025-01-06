@@ -3,3 +3,6 @@ Repositório dedicado aos meus projetos de front-end. Aqui você encontrará exe
 
 **Project Hamburger**
 ![Projeto-burger](/burger-shop/burger-view/projeto-burger.png)
+
+**Project Restaurant**
+![Projeto-Restaurant](/restaurant/restaurant-view/projeto-restaurant.png)
