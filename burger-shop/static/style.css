@@ -20,6 +20,8 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 1em;
+    width: 100vw;
+    position: fixed;
 }
 
 header > div {
