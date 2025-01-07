@@ -6,3 +6,6 @@ Repositório dedicado aos meus projetos de front-end. Aqui você encontrará exe
 
 **Project Restaurant**
 ![Projeto-Restaurant](/Restaurant/restaurant-view/projeto-restaurant.png)
+
+**Project Calculadora**
+![Projeto-calculadora](/Calculadora/calculadora-view/calculadora.png)
