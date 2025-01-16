@@ -8,7 +8,7 @@
 .container {
     height: 100vh;
     padding: 3em;
-    background-image: url(../imagens/fundo-login.jpg);
+    background-image: url(../Tela-Login/imagens/fundo-login.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
