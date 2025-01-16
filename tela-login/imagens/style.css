@@ -28,6 +28,7 @@
     text-align: center;
     padding: 1em;
     font-size: 3em;
+    color: #fff;
 }
 
 .content-login > form {
@@ -38,13 +39,33 @@
 
 .content-login > form > label {
     font-size: 1.8em;
-    margin-top: 40px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #fff;
 }
 
 .content-login > form > input {
     padding: 1em;
-    font-size: 1.5em;
+    font-size: 1.7em;
+    font-weight: bold;
     border-radius: 15px;
+    background-color: #ffffff54;
+    border: none;
+}
+
+.content-login > form > p {
+    font-size: 1.4em;
+    margin-top: 15px;
+    margin-left: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.content-login > form > p > a {
+    text-decoration: none;
+    font-size: bold;
+    color: rgb(0, 38, 255);
 }
 
 .content-login > form > button {
