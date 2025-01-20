@@ -52,7 +52,7 @@ header > .btn-reserve:hover {
 }
 
 main > .section-img-fundo {
-    background-image: url(/restaurant/imagens/foto-fundo-restaurant.jpg);
+    background-image: url(../Restaurant/imagens/foto-fundo-restaurant.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
