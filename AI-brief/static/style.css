@@ -1,0 +1,221 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary-color: #256EFF;
+    --secundary-color: #46237A;
+}
+
+body {
+    background-image: url(../static/imagens/fundo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 7em;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.11);
+    box-shadow: 0px 5px 10px #0000003d;
+}
+
+header > .logo > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+header > .logo > a > img {
+    width: 50px;
+    margin-right: 5px;
+}
+
+header > .logo > a > h1 {
+    color: #fff;
+}
+
+header > .links {
+    padding: 1em;
+}
+
+header > .links > a {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 35px;
+    color: #fff;
+    text-decoration: none;
+}
+
+main > .section-home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main > .section-home > h1 {
+    font-size: 4em;
+    font-weight: 600;
+    background: linear-gradient(to right, var(--primary-color), var(--secundary-color));
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+main > .section-home > h2 {
+    color: #fff;
+    font-size: 3em;
+    margin: 20px;
+    text-align: center;
+}
+
+main > .section-home > p {
+    color: #fff;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+main > .section-about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6em;
+}
+
+main > .section-about > .section-about-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.11);
+    text-align: center;
+    height: 40vh;
+    border-radius: 15px;
+    padding: 3em;
+}
+
+main > .section-about > .section-about-info > h1 {
+    font-size: 4em;
+    font-weight: 600;
+    color: #fff;
+}
+
+main > .section-about > .section-about-info > article > h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+main > .section-about > .section-about-info > article > p {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+main > .section-services {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main > .section-services > h1 {
+    color: #fff;
+    font-size: 4em;
+    font-weight: 600;
+}
+
+main > .section-services > .services-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+main > .section-services > .services-box > .box {
+    height: 30vh;
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    color: #fff;
+    padding: 1em;
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.11);
+}
+
+main > .section-services > .services-box > .box > p {
+    font-size: 1.5em;
+}
+
+main > .section-contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main > .section-contact > h1 {
+    color: #fff;
+    font-size: 4em;
+    font-weight: 600;
+}
+
+main > .section-contact > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.11);
+    padding: 2em;
+    height: 50vh;
+    border-radius: 15px;
+}
+
+main > .section-contact > form > label {
+    font-size: 1.7em;
+    color: #fff;
+    margin-top: 30px;
+}
+
+main > .section-contact > form > input, textarea {
+    padding: 1em;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    width: 50vh;
+}
+
+main > .section-contact > form > button {
+    padding: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    margin-top: 30px;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(to right, #ff6347, #1e90ff);
+}
+
