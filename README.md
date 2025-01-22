@@ -15,3 +15,6 @@ Repositório dedicado aos meus projetos de front-end. Aqui você encontrará exe
 
 **Project Curso**
 ![Projeto-Curso](/Curso/curso-view/projeto-curso.png)
+
+**Project AI**
+![Projeto-AI](/AI-brief/ai-view/projeto-ai.png)
