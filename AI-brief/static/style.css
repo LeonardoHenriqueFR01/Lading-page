@@ -33,6 +33,49 @@ header {
     box-shadow: 0px 5px 10px #0000003d;
 }
 
+/* Estilo para o ícone do menu */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger div {
+    height: 3px;
+    background-color: #333;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Estilo do menu */
+.menu {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Menu aberto */
+.menu.open {
+    display: flex;
+}
+  
+
 header > .logo > a {
     display: flex;
     align-items: center;
@@ -95,7 +138,7 @@ main > .section-about {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 6em;
+    padding: 2em;
 }
 
 main > .section-about > .section-about-info {
@@ -219,3 +262,103 @@ main > .section-contact > form > button {
     background: linear-gradient(to right, #ff6347, #1e90ff);
 }
 
+@media (max-width: 786px) {
+
+    .hamburger {
+        display: flex;
+    }
+
+    header {
+        height: 10vh;
+    }
+
+    header > .logo > a > img {
+        width: 10vw;
+    }
+
+    header > .logo > a > h1 {
+        font-size: 1.5em;
+    }
+
+    header > .links {
+        display: none;
+    }
+
+    main > .section-home > h1 {
+        font-size: 2em;
+    }
+
+    main > .section-home > h2 {
+        font-size: 1.5em;
+    }
+
+    main > .section-home > p {
+        font-size: 1.3em;
+    }
+
+    main > .section-about > .section-about-info {
+        height: 80vh;
+    }
+
+    main > .section-about > .section-about-info > h1 {
+        font-size: 2.5em;
+    }
+
+    main > .section-about > .section-about-info > article > h2 {
+        font-size: 1.5em;
+    }
+
+    main > .section-about > .section-about-info > article > p {
+        font-size: 1.3em;
+    }
+
+    main > .section-services > h1 {
+        font-size: 2.3em;
+        margin-bottom: 1em;
+    }
+
+    main > .section-services > .services-box > .box {
+        height: 35vh;
+    }
+
+    main > .section-services > .services-box > .box > img {
+        width: 15vw;
+    }
+
+    main > .section-services > .services-box > .box > h2 {
+        font-size: 1.5em;
+    }
+
+    main > .section-services > .services-box > .box > p {
+        font-size: 1em;
+    }
+
+    main > .section-contact > h1 {
+        font-size: 1.5em;
+    }
+
+    main > .section-contact > form {
+        height: 60vh;
+    }
+
+    main > .section-contact > form > label {
+        font-size: 1.3em;
+        margin-bottom: 5px;
+    }
+
+    main > .section-contact > form > input {
+        padding: .8em;
+        font-size: 1em;
+    }
+    
+    main > .section-contact > form > textarea {
+        padding: .8em;
+        font-size: 1em;
+    }
+
+    main > .section-contact > form > button {
+        font-size: 1em;
+        padding: .7em;
+    }
+
+}
